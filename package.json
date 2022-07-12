@@ -8,7 +8,7 @@
     "npm": "please-use-yarn-to-install-this-package"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -21,6 +21,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
     "husky": "^8.0.1",
